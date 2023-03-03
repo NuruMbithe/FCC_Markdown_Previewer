@@ -1,38 +1,138 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+body {
+  background: linear-gradient(#f8f8f8, #f4f4f4);
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 30px;
+  max-width: 1500px;
+  height: 80vh;
+  margin: 30px auto;
+  padding: 40px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.column {
+  position: relative;
+  height: calc(100vh - 80px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+#editor,
+#preview {
+  padding: 40px 20px 20px;
+  position: relative;
+  width: 100%;
+  height: 95%;
+  overflow-y: scroll;
+  box-shadow: 0 2px 14px 4px rgba(0, 0, 0, .06);
+  background-color: #fff;
+  font-size: small;
+}
+
+#editor {
+  background-color: #121212;
+  color:  #E1D9D1;
+}
+
+
+#editor::-webkit-scrollbar-track,
+#preview::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+	border-radius: 6px;
+	background-color: #f4f4f4;
+}
+
+#editor::-webkit-scrollbar,
+#preview::-webkit-scrollbar {
+	width: 12px;
+	background-color: #f4f4f4;
+  border-radius: 6px;
+}
+
+#editor::-webkit-scrollbar-thumb,
+#preview::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+	background: linear-gradient(#f4b679, #fb7414);
+}
+
+#editor {
+  resize: none;
+  border: none;
+  outline-color: #d7edd7;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 16px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  background: linear-gradient(#f4b679, #fb7414);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  cursor: default;
+}
+
+.main-title {
+  position: absolute;
+  margin-left: 650px;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(#f4b679, #fb7414);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  cursor: default;
+}
+.downloadbtn {
+  position: absolute;
+  left: 520px;
+  z-index: 1;
+  transform: translateY(-130%);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  background: #fb7414;
+  color: #121212;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  cursor: default;
+  transition: all 0.3s linear;
+}
+.downloadbtn:hover{
+ color: #fb7414;
+ background: #121212;
+}
+
+@media screen and (max-width: 619px) {
+  .wrapper {
+    grid-gap: 40px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  .column {
+    height: calc(50vh - 20px - 40px);
   }
 }
