@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/FCC_Markdown_Previewer/static/css/main.a066b0ee.css",
+    "main.js": "/FCC_Markdown_Previewer/static/js/main.a7aeddf5.js",
+    "static/js/703.119b9efc.chunk.js": "/FCC_Markdown_Previewer/static/js/703.119b9efc.chunk.js",
+    "static/js/514.bc452951.chunk.js": "/FCC_Markdown_Previewer/static/js/514.bc452951.chunk.js",
+    "static/js/787.9830f409.chunk.js": "/FCC_Markdown_Previewer/static/js/787.9830f409.chunk.js",
+    "index.html": "/FCC_Markdown_Previewer/index.html",
+    "main.a066b0ee.css.map": "/FCC_Markdown_Previewer/static/css/main.a066b0ee.css.map",
+    "main.a7aeddf5.js.map": "/FCC_Markdown_Previewer/static/js/main.a7aeddf5.js.map",
+    "703.119b9efc.chunk.js.map": "/FCC_Markdown_Previewer/static/js/703.119b9efc.chunk.js.map",
+    "514.bc452951.chunk.js.map": "/FCC_Markdown_Previewer/static/js/514.bc452951.chunk.js.map",
+    "787.9830f409.chunk.js.map": "/FCC_Markdown_Previewer/static/js/787.9830f409.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a066b0ee.css",
+    "static/js/main.a7aeddf5.js"
+  ]
+}
